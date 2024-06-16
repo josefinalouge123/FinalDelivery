@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP2</title>
+
+ <!--link a bootstrap css-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+<!--link de bootstrap iconografía-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+<!--vinculación de icomoon-->
+<link rel="stylesheet" href="css/style.css">
+    
+<link rel="stylesheet" href="css/estilos.css">
+
+<!--link a lightbox-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+
+
+<body>
+<!--barra de navegacion-->
+    <nav class="navbar navbar-expand-md fixed-top bg-secondary" data-bs-theme="dark">
+        <div class="container-fluid">
+
+    <a class="navbar-brand" href="#">
+    <img src="imagenes/Logo-04.png" alt="Bootstrap" width="40"></a>
+
+    <!--menu de hamburguesa-->
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#desplegable">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+   
+    <!--boton shop-->
+    <div class="collapse navbar-collapse" id="desplegable">
+        <ul class="navbar-nav d-flex w-100">
+            <li class="nav-item">
+                <a class="nav-link" href="https://juanperez.com.ar/?gad_source=1&gclid=Cj0KCQjw97SzBhDaARIsAFHXUWCKUTcgVFGx2lQhlIzSubiTOR6t7qRakQeobLJmIDD_ewztsW-ju7oaAh7YEALw_wcB">Shop</a>
+              </li>
+
+    <!--boton contact-->  
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#"  data-bs-toggle="dropdown">Contact</a>
+            <ul class="dropdown-menu ">
+            <li> <button class="dropdown-item" data-bs-toggle="modal" data-bs-target="#miModal">Dona tu ropa</button></li>
+            </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--cierre de la barra de navegación-->
+
+  
+  <!--formulario y modal-->
+  <div class="modal fade" id="miModal" tabindex="-1">
+    <div class="modal-dialog modal-x1 modal-fullscreen-lg-down">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title h6" id="miModal">Dejanos tus datos</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            
+            <div class="modal-body">
+                <form class="needs-validation" novalidate>
+                    <div>
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" pattern="[a-zA-Z]{1,20}" required class="form-control" name="nombre" id="nombre">
+                    <div class="invalid-feedback">El campo no es valido</div>
+                    </div>
+                    <div>
+
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" required class="form-control" name="email" id="email">
+                    <div class="invalid-feedback">El campo no es valido</div>
+                    </div>
+                    
+                    <div>
+                    <label for="comentarios" class="form-label">Articulos de donacion</label>
+                    <textarea name="comentarios" pattern="[a-zA-Z0-9]{10,200}" required class="form-control" id="comentarios"></textarea>
+                    <div class="invalid-feedback">El campo no es valido</div>
+                    </div>
+                
+                    <button class="btn btn-outline-success mt-2">Enviar</button>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-warning" data-bs-dismiss="modal">Cerrar</button>
+            </div>    
+        </div>
+    </div>
+</div>
+
+
+ <!--carousel-->
+ <div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="imagenes/Feria_Mesa de trabajo 1.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="imagenes/Feria-05.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="imagenes/Feria-06.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!--Titulo-->
+<div class="titulo">
+    <h1 class="titulo fw-bold">Felina Vintage Store </h1>
+    <h3 class=>Moda y objetos vintage </h3>
+ </div>
+    
+<!--Grilla-->
+<div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h2> About </h2>
+            <p> Felina Vintage Store es una marca vintage sustentable donde se compran y venden prendas y accesorios únicos, promoviendo la moda circular y el consumo responsable.</p>
+            
+        </div>
+
+          <div class="col-md-4">
+            <h2> Story </h2>
+            <p>Este proyecto comenzó con dos amigas apasionadas por la moda y la sostenibilidad. Nuestra misión es promover la moda apoyando al planeta. </p><br>
+            
+            
+          </div>
+          <div class="col-md-4">
+           <h2>Circular</h2>
+           <p>Felina Vintage Store quiere que ayudemos al planeta y que tengas la posibilidad de vender tu ropa a cambio de una comisión.</p>
+           
+            
+          </div>
+        </div>
+      </div>
+
+  
+    <!--Foto-->
+    <div class="row">
+        <div class="col-md">
+            <img class="fotoropa" src="imagenes/Fotos web-06.png" alt="fotoropa">
+        </div>
+    
+        <div class="col-md">
+            <h2>Nuevas Sucursales</h2>
+            Continuamos expandiendo con la apertura de dos nuevas sucursales en los vibrantes barrios de Palermo Hollywood y San Telmo.Estos nuevos locales no solo ofrecen una amplia selección de prendas y accesorios vintage, sino que también refuerzan el compromiso de la marca con la sostenibilidad.
+        </div>
+
+
+<!--Dona-->
+
+<div class="container-md2">
+    <h2 class="Suscribite">   Dona  </h2>
+    <p> No te pierdas esta increible oportunidad de dondar tu ropa <br> y contribuir en un mundo mejor. </p>
+
+    <a href="https://juanperez.com.ar/pages/vender" target="_blank" class="btn btn-primary-sabe" tabindex="-1" role="button" aria-disabled="true">Sabe más</a>
+    </div>
+
+
+<!--Lightbox-->
+
+<div class="mx-auto p-3 d-flex justify-content-between gx-3">
+    <a href="imagenes/Feria-03.png" data-lightbox="galeria" class="d-block">
+        <div class="imagen5"><img class="img-thumbnail img-fluid" src="imagenes/Feria-03.png" alt="imagen5"></div>
+    </a>
+    <a href="imagenes/Feria-04.png" data-lightbox="galeria" class="d-block">
+        <div class="imagen6"><img class="img-thumbnail img-fluid" src="imagenes/Feria-04.png" alt="imagen6"></div>
+    </a>
+</div>
+
+
+
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+
+
+<footer>
+
+
+    
+</footer>
+
+
+</main>
+
+ 
+<!--link de js-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="js/codigo.js"></script>
+    
+</body>
+</html>
+

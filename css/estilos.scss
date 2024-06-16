@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@600&display=swap');
+
+$texto: "Montserrat", sans-serif;
+$titulo: "Poppins", sans-serif;
+$coloruno: #e9ebf4;
+$colordos: black;
+
+:root {
+    --bs-body-bg: #e6e1dd;
+    --color-fondo: #e6e1dd;
+}
+
+.btn-outline-success {
+    --bs-btn-border-color: gray;
+    --bs-btn-hover-bg: $colordos;
+}
+
+body {
+    font-family: $texto;
+    background-color: var(--color-fondo);
+    font-size: 15px;
+}
+
+h1, h2 {
+    font-family: $titulo;
+}
+
+.carousel {
+    width: 100%;
+    padding-bottom: 3.5rem;
+}
+
+.titulo, .row, h3 {
+    padding: 4rem;
+}
+
+h1 {
+    font-size: 60px;
+    padding-bottom: 0.1rem;
+}
+
+h3 {
+    font-size: 20px;
+    padding-top: 0.1rem;
+}
+
+.row, .container-md2 {
+    text-align: center;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.fotoropa {
+    width: 40%;
+}
+
+.btn-primary-sabe {
+    background-color: $coloruno;
+    &:hover {
+        background-color: $colordos;
+    }
+}
+
+.imagen5, .imagen6 {
+    padding: 2rem;
+}
+
+footer {
+    background-color: #6e757c;
+    height: 200px;
+    width: 100%;
+    bottom: 0; 
+    left: 0; 
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 1200px) {
+    body {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    .carousel {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    body {
+        font-size: 13px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    .carousel {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 12px;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    h3 {
+        font-size: 14px;
+    }
+    header {
+        height: auto;
+    }
+    .carousel {
+        width: 100%;
+    }
+    .fotoropa {
+        width: 60%;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        font-size: 11px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 12px;
+    }
+    .carousel {
+        width: 100%;
+    }
+    .fotoropa {
+        width: 70%;
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        font-size: 10px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 10px;
+    }
+    .carousel {
+        width: 100%;
+    }
+    .fotoropa {
+        width: 80%;
+    }
+}
+

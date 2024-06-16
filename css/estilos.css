@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@600&display=swap');
+
+:root {
+    --bs-body-bg: #ffffff;
+    --color-fondo:#f4eeee;
+}
+
+.btn-outline-success {
+    --bs-btn-border-color: rgb(216, 25, 25);
+    --bs-btn-hover-bg: black;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color:  #474a4e;
+    background-color: var(--color-fondo);
+    font-size: 15px;
+    margin: 0; 
+    padding: 0; 
+}
+
+h1, h2 {
+    font-family: "Poppins", sans-serif;
+}
+
+.carousel {
+    width: 100%;
+    padding-bottom: 3.5rem;
+}
+
+.titulo, .row, h3 {
+    padding: 4rem;
+}
+
+h1 {
+    font-size: 100px;
+    padding-bottom: 0.1rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 30px;
+    padding-top: 0.1rem;
+    text-align: center;
+}
+
+.row, .container-md2 {
+    text-align: center;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.fotoropa {
+    width: 80%;
+    margin-bottom: 80px;
+}
+
+.btn-primary-sabe {
+    background-color: #d2c5cd;
+}
+
+.btn-primary-sabe:hover {
+    background-color: black;
+}
+
+.imagen5, .imagen6 {
+    padding: 2rem;
+    width: 100%; 
+  }
+
+  footer {
+    background-color: #6e757c;
+    height: 200px;
+    width: 100%;
+    bottom: 0; 
+    left: 0; 
+    margin: 0;
+    padding: 0;
+}
+  
+@media (max-width: 1200px) {
+    body {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 60px;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    .carousel {
+        width: 100%;
+    }
+    .imagen5, .imagen6 {
+        width: 90%; 
+    }
+}
+
+@media (max-width: 992px) {
+    body {
+        font-size: 13px;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    .carousel {
+        width: 100%;
+    }
+    .imagen5, .imagen6 {
+        width: 80%; 
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 12px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    header {
+        height: auto;
+    }
+    .carousel {
+        width: 100%;
+    }
+    .titulo, .row, h3 {
+        padding: 2rem;
+    }
+    .fotoropa {
+        width: 100%;
+    }
+    .imagen5, .imagen6 {
+        width: 100%; 
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        font-size: 11px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    .carousel {
+        width: 100%;
+    }
+    .titulo, .row, h3 {
+        padding: 1.5rem;
+    }
+    .fotoropa {
+        width: 100%;
+    }
+    .imagen5, .imagen6 {
+        width: 100%; 
+        padding: 0.5rem; 
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        font-size: 10px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 14px;
+    }
+    .carousel {
+        width: 100%;
+    }
+    .titulo, .row, h3 {
+        padding: 1rem;
+    }
+    .fotoropa {
+        width: 100%;
+    }
+    .imagen5, .imagen6 {
+        width: 100%; 
+        padding: 0.25rem; 
+    }
+}
